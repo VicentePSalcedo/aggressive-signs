@@ -1,0 +1,26 @@
+<div class="navbar">
+  <div class="navigation-wrap">
+    <a href="/" class="logo-link w-nav-brand">
+      <img src="/assets/logo.jpg" width="108" alt="aggressivesignlogo.jpg" class="logo-image">
+    </a>
+    <div class="menu">
+      @if (innerWidth >= 991) {
+      <nav role="navigation" class="navigation-items w-nav-menu"
+        style="transition: all; transform: translateY(0px) translateX(0px);">
+        <a href="/about" class="navigation-item w-nav-link w--current">About</a>
+        <a href="/work" class="navigation-item w-nav-link">Work</a>
+        <a href="/contact" class="navigation-item w-nav-link">Contact</a>
+      </nav>
+      <a href="mailto:jason@aggressivesign.com?subject=You've%20got%20mail!"
+        class="button cc-contact-us w-inline-block">
+        <div>Contact US</div>
+      </a>
+      } @else {
+      <div class="menu-button">
+        <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
+          width="22" alt="" class="menu-icon" (click)="toggleMenu()">
+      </div>
+      }
+    </div>
+  </div>
+</div>
