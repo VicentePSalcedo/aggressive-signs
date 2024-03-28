@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { StartnowComponent } from '../startnow/startnow.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [StartnowComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

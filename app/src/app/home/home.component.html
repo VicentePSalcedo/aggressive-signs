@@ -1,11 +1,13 @@
 <div class="section cc-store-home-wrap">
+  <!-- it the css backgroud that controls the image for the intro-header div-->
   <div class="intro-header">
     <div class="intro-content cc-homepage">
       <div class="intro-text">
         <div class="heading-jumbo">Grow your business.</div>
         <div class="paragraph-bigger cc-bigger-white-light">Give your business a boost with a beautifully crafted
           homepage.<br></div>
-      </div><a href="/about" class="button cc-jumbo-button cc-jumbo-white w-inline-block">
+      </div><a class="button cc-jumbo-button cc-jumbo-white w-inline-block" routerLink="/about"
+        routerLinkActive="active" ariaCurrentWhenActive="page">
         <div>Learn More</div>
       </a>
     </div>
@@ -25,7 +27,7 @@
             <p class="paragraph-light">Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis
               feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros.
               Cras ullamcorper gravida tellus ut consequat.</p>
-          </div><a href="/about" class="button w-inline-block">
+          </div><a class="button w-inline-block" routerLink="/about" routerLinkActive="active" scrollPositionRestoration="top">
             <div>Learn More</div>
           </a>
         </div><img
@@ -40,7 +42,8 @@
             <p class="paragraph-light">Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis
               feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros.
               Cras ullamcorper gravida tellus ut consequat.</p>
-          </div><a href="/team" class="button w-inline-block">
+          </div><a class="button w-inline-block" routerLink="/about" routerLinkActive="active"
+            ariaCurrentWhenActive="page">
             <div>Learn More</div>
           </a>
         </div><img
@@ -50,18 +53,4 @@
     </div>
   </div>
 </div>
-<div class="section cc-cta">
-  <div class="container">
-    <div class="cta-wrap">
-      <div>
-        <div class="cta-text">
-          <div class="heading-jumbo-small">Grow your business.<br></div>
-          <div class="paragraph-bigger cc-bigger-light">Today is the day to build the business of your dreams. Share
-            your mission with the world — and blow your customers away.<br></div>
-        </div><a href="/contact" class="button cc-jumbo-button w-inline-block">
-          <div>Start Now</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<app-startnow></app-startnow>

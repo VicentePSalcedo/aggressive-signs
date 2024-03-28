@@ -1,10 +1,4 @@
 # Things to get done
-    - put (just logo in the top left)
-    - center (just words over an image or something)
-    - menu button function
-    - menu overlay
-    - Navigation header
-    - home page
-    - about page
-    - work page
-    - contact page
+- fix links on home
+- fix links on about
+- fix links on contact
