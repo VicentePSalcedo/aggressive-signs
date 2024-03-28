@@ -1,28 +1,27 @@
 <div class="navigation">
   <div class="navigation-wrap">
-    <a href="/" class="logo-link w-nav-brand">
-      <img src="/assets/logo.png" width="125" alt="aggressivesignlogo.jpg">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="logo-link">
+      <img src="/assets/logowords.png" width="120" alt="aggressivesignlogo.jpg">
     </a>
     <div class="menu">
-      @if (innerWidth >= 991) {
-      <nav role="navigation" class="navigation-items w-nav-menu"
+      <nav class="navigation-items"
         style="transition: all; transform: translateY(0px) translateX(0px);">
         <ul>
-          <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
-          <a routerLink="/work" routerLinkActive="active" ariaCurrentWhenActive="page">Work</a>
-          <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+          <a class="navigation-item" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+          <a class="navigation-item" routerLink="/work" routerLinkActive="active" ariaCurrentWhenActive="page">Work</a>
+          <a class="navigation-item" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
         </ul>
       </nav>
-      <a href="mailto:jason@aggressivesign.com?subject=You've%20got%20mail!"
-        class="button">
-        <div>Contact US</div>
-      </a>
-      } @else {
       <div class="menu-button">
         <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
-          width="42" alt="" class="menu-icon" (click)="toggleMenu()">
+          width="27" alt="" class="menu-icon" (click)="toggleMenu()">
       </div>
-      }
     </div>
+    <a href="mailto:jason@aggressivesign.com?subject=You've%20got%20mail!" class="button">
+      <div>Contact US</div>
+    </a>
   </div>
+  @if (menuOpen) {
+    <app-navoverlay></app-navoverlay>
+  }
 </div>

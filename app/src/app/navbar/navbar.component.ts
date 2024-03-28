@@ -1,23 +1,16 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { NavoverlayComponent } from '../navoverlay/navoverlay.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, NavoverlayComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  innerWidth: number = 1000;
   menuOpen: boolean = false;
-  ngOnInit() {
-    this.innerWidth = window.innerWidth;
-  }
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    this.innerWidth = window.innerWidth;
-  }
   toggleMenu() {
     this.menuOpen = this.menuOpen ? false : true;
   }

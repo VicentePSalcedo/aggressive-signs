@@ -1,5 +1,4 @@
 # Things to get done
-    - split logo into (just logo) and (logo + words) and (just words)
     - put (just logo in the top left)
     - center (just words over an image or something)
     - menu button function
