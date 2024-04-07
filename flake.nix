@@ -1,6 +1,4 @@
 {
-  description = "A Nix-flake-based Node.js development environment";
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
   };
@@ -17,10 +15,10 @@
       packages = with pkgs; [
         nodejs_21
         nodePackages.pnpm
+        nodePackages."@angular/cli"
       ];
 
       shellHook = ''
-        echo "node `${pkgs.nodejs}/bin/node --version`"
       '';
     };
   };
