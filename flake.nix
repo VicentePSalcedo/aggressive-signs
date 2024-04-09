@@ -16,9 +16,12 @@
         nodejs_21
         nodePackages.pnpm
         nodePackages."@angular/cli"
+        firebase-tools
       ];
 
       shellHook = ''
+        firebase login
+        ng build app
       '';
     };
   };
