@@ -20,8 +20,11 @@
       ];
 
       shellHook = ''
-        firebase login
+        echo "install angular cli and building app"
         ng build app
+        echo "enabling firebase experimental features"
+        firebase experiments:enable webframeworks
+        echo "don't forget to run 'firebase init hosting' on new machines"
       '';
     };
   };
