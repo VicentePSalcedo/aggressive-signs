@@ -1,5 +1,2 @@
-# Things to get done
-- fix links on home
-- fix links on about
-- fix links on contact
-- test line
+# Website Preview
+![alt text](./2024-04-15_15-45.png "Website Preview")
