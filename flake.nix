@@ -15,7 +15,6 @@
         nodejs_21
         nodePackages.pnpm
         nodePackages."@angular/cli"
-        nodePackages."firebase-tools"
       ];
       shellHook = ''
       '';
