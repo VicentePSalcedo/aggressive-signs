@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "aggressivesigns-prototype"
-  }
+    "default": "aggressivesigns",
+  },
+  "targets": {},
+  "etags": {}
 }
